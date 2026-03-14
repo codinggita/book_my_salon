@@ -9,7 +9,9 @@ The platform aims to digitize local salons and provide customers with a convenie
 
 ## 📊 Project Presentation
 
-<iframe src="Presentation%20-%20SmartSalon.pdf" width="100%" height="500px"></iframe>
+📄 **View the complete project presentation:**
+
+[👉 Click here to open the presentation](./Presentation%20-%20SmartSalon.pdf)
 
 # 📌 Project Overview
 
