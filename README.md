@@ -7,6 +7,10 @@ The platform aims to digitize local salons and provide customers with a convenie
 
 ---
 
+## 📊 Project Presentation
+
+<iframe src="Presentation%20-%20SmartSalon.pdf" width="100%" height="500px"></iframe>
+
 # 📌 Project Overview
 
 Traditional salon visits often involve long waiting times and inefficient manual management. Many local salons still operate without digital systems, making it difficult for customers to plan their visits.
