@@ -1,158 +1,129 @@
-# 💇 BookMySalon
-### Smart Salon Booking & Queue-Free Management Platform
+# 💇 Book My Salon - Premium Salon Booking Platform
 
-**BookMySalon** is a modern web platform that allows users to find nearby salons, book appointments online, and avoid long waiting times.
+### 🎨 [View Figma Design (Untitled Design)](https://www.figma.com/design/J34yi9O6nIyt4XJKMIRHun/Untitled?node-id=0-1&t=nTFGjQPC7Lg3UVnE-1)
 
-The platform aims to digitize local salons and provide customers with a convenient and time-saving grooming experience.
+![Book My Salon Banner](C:\Users\Dell Latitude\.gemini\antigravity\brain\497d578d-6d37-468e-a4fb-afed09892198\book_my_salon_banner_1776940107279.png)
 
----
+## 📁 Project Folder Structure
 
-## 📊 Project Presentation
-
-📄 **View the complete project presentation:**
-
-[👉 Click here to open the presentation](./Presentation%20-%20SmartSalon.pdf)
-
-# 📌 Project Overview
-
-Traditional salon visits often involve long waiting times and inefficient manual management. Many local salons still operate without digital systems, making it difficult for customers to plan their visits.
-
-**BookMySalon** solves this problem by providing an easy-to-use online booking system where customers can schedule appointments in advance and arrive exactly at their reserved time.
-
----
-
-# ❗ Problem Statement
-
-Many customers face significant challenges when visiting salons:
-
-- ⏳ **Long Waiting Times**  
-Customers often wait **30 minutes to 2 hours** for their turn.
-
-- 📅 **No Appointment System**  
-Most local salons operate without structured booking systems.
-
-- 👀 **No Visibility of Queue**  
-Customers cannot see waiting times before visiting.
-
-- 🧾 **Manual Management**  
-Salon owners manage customers manually, which creates inefficiency.
-
-- 🏠 **Limited Access to Services**  
-Customers cannot easily book salon services from home.
-
-These problems highlight the need for a **digital salon booking platform**.
+```text
+Book_My_Salon/
+│
+├── 📂 client/                   # React + Vite Frontend
+│   ├── 📂 src/
+│   │   ├── 📂 admin/            # Admin-specific modules
+│   │   ├── 📂 components/       # Reusable UI components (Navbar, SearchBar, SalonCard, etc.)
+│   │   ├── 📂 pages/            # View components (Home, Booking, Dashboard, SalonDetails)
+│   │   ├── 📂 context/          # State management (AuthContext, etc.)
+│   │   ├── 📂 services/         # API service layers
+│   │   ├── 📄 App.jsx           # Main application router
+│   │   └── 📄 main.jsx          # Entry point
+│   ├── 📄 tailwind.config.js    # Modern UI constraints
+│   └── 📄 vite.config.js        # Build configurations
+│
+├── 📂 server/                   # Node.js + Express Backend
+│   ├── 📂 controllers/          # Business logic handlers
+│   ├── 📂 models/               # MongoDB Schemas (User, Salon, Booking)
+│   ├── 📂 routes/               # API Endpoint definitions
+│   ├── 📂 middleware/           # Auth and error handling filters
+│   ├── 📂 config/               # Database and environment configurations
+│   ├── 📂 utils/                # Helper functions
+│   └── 📄 server.js             # API entry point
+│
+└── 📄 README.md                 # Core Documentation
+```
 
 ---
 
-# 💡 Our Solution
+## 🌟 Project Purpose & Problem Statement
 
-**BookMySalon** provides a simple and efficient digital solution.
+### ❌ The Problem
+Traditional salon visits often result in frustration due to:
+- **Long Waiting Times:** Customers often wait 30 minutes to 2 hours without knowing when they'll be served.
+- **Lack of Transparency:** No way to check service prices or stylist availability beforehand.
+- **Manual Management:** Salon owners struggle with chaotic paper-based booking systems and phone calls.
+- **Zero Online Presence:** Many high-quality local salons remain undiscovered by digital-savvy users.
 
-Users can:
-
-- Find nearby salons
-- Check available slots
-- Book appointments online
-- Avoid long waiting queues
-- Manage their bookings easily
-
-Salon owners can:
-
-- Manage appointments digitally
-- Reduce crowd and waiting
-- Increase customer reach
+### ✅ The Solution
+**Book My Salon** is a sophisticated digital ecosystem designed to bridge the gap between premium grooming services and busy professionals. It provides a **seamless, queue-free experience** where:
+- Customers can discover top-rated salons, view live availability, and book slots instantly.
+- Salon owners gain a powerful dashboard to manage their business, staff, and appointments with surgical precision.
 
 ---
 
-# 🚀 Key Features
+## 🚀 Key Features
 
-### 🔎 Nearby Salon Search
-Users can discover salons based on location.
+### 👤 For Customers
+- **Smart Discovery:** Filter salons by city, category, and ratings.
+- **Instant Booking:** Interactive time-slot selection to avoid queues.
+- **Personalized Profile:** Manage bookings, view history, and save favorite salons.
+- **Special Offers:** Access exclusive deals and seasonal packages.
 
-### 📅 Online Slot Booking
-Customers can select a convenient time slot.
+### 🏢 For Salon Owners
+- **Owner Dashboard:** Live tracking of today's appointments and revenue.
+- **Service Management:** Easily add/edit services, timings, and prices.
+- **Onboarding:** Step-by-step process to get your salon online in minutes.
+- **Review Management:** Build trust by interacting with customer feedback.
 
-### ⏱ Queue-Free Experience
-Customers arrive at their scheduled time.
-
-### ⭐ Ratings & Reviews
-Users can view feedback from other customers.
-
-### 🔔 Booking Notifications
-Users receive reminders for upcoming appointments.
-
-### 💳 Online Payment (Future Feature)
-Secure payment integration for salon services.
+### 🛡️ Core Security
+- **JWT Authentication:** Secure user sessions and protected routes.
+- **Role-Based Access:** Distinct permissions for Admins, Owners, and Customers.
 
 ---
 
-# 🖼 Application Preview
+## 🛠️ Technology Stack
 
-## Home Page
-![Home](images/home.png)
-
-## Booking System
-![Booking](images/booking.png)
-
-## Queue Management
-![Queue](images/queue.png)
-
-## Business Model
-![Business](images/business.png)
-
-> Replace the images above with your actual project screenshots.
+| Layer | Technology |
+|---|---|
+| **Frontend** | React.js (Vite), Tailwind CSS, Lucide Icons, Framer Motion |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB (Mongoose) |
+| **Payment** | Razorpay / Stripe (Planned Integration) |
+| **Auth** | JSON Web Tokens (JWT) |
 
 ---
 
-# ⭐ Customer Reviews (Concept)
+## ⚙️ Installation & Setup
 
-Example reviews users might leave:
+### Prerequisites
+- Node.js (v18.x or higher)
+- MongoDB account (Atlas or Local)
 
-⭐ ⭐ ⭐ ⭐ ⭐  
-**Rahul Patel**  
-"Very easy to book salon appointments. Saved a lot of waiting time."
+### 1. Backend Configuration
+```bash
+cd server
+npm install
+```
+Create a `.env` file in the `server` directory and add:
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_key
+```
 
-⭐ ⭐ ⭐ ⭐ ⭐  
-**Aditi Shah**  
-"Great platform for busy professionals. Booking takes only seconds."
+### 2. Frontend Configuration
+```bash
+cd client
+npm install
+```
 
-⭐ ⭐ ⭐ ⭐ ⭐  
-**Rohit Mehta**  
-"Finally a way to avoid long queues at salons!"
+### 3. Running the Application
+**Start Backend:**
+```bash
+cd server
+npm run dev
+```
 
----
-
-# 👥 Target Users
-
-### Customers
-- Urban residents
-- Working professionals
-- Students
-
-### Salon Owners
-- Local salons
-- Grooming service providers
-- Small beauty businesses
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-- React.js
-- Tailwind CSS
-
-## Backend
-- Node.js
-- Express.js
-
-## Database
-- MongoDB
-
-## Other Tools
-- Google Maps API
-- JWT Authentication
+**Start Frontend:**
+```bash
+cd client
+npm run dev
+```
 
 ---
 
-# 📁 Project Structure
+## 📄 License
+This project is licensed under the MIT License.
+
+---
+*Created with ❤️ by the Book My Salon Team*
